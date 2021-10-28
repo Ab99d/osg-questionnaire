@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai&family=Roboto+Condensed:wght@700&display=swap');
+
+body {
+    background: url(../images/prand\ identety-bg-ar.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.hero {
+    margin-bottom: 15rem;
+}
+
+.container > div img {
+    max-width: 900px;
+}
+
+div .navbar-brand img {
+    max-width: 300px;
+}
+
+.form .container img {
+    max-width: 1792px;
+}
+
+.form > div:first-of-type {
+    margin-bottom: 7rem;
+}
+
+.design-icon {
+    right: 42px;
+    bottom: 56px;
+    max-width: 453px !important;
+}
+
+.design-icon-container {
+    width: 500px;
+}
+
+.brand-name-tagline {
+    font-weight: 900;
+    color: #f8931f;
+    font-family: Roboto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 65px;
+    top: 30px;
+    max-width: 400px;
+}
+/* 
+.tag-line {
+    display: flex;
+    align-items: flex-start;
+} */
+
+.tag-line textarea {
+    background-attachment: local;
+    background-image: repeating-linear-gradient(to right , transparent 0 5px, white 0 8px),
+    repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 2px), rgb(143, 143, 143) 0 1.5em);
+    line-height: 31px;
+    border: none;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: transparent;
+    resize: none;
+    width: 280px;
+}
+
+.tag-line textarea:focus{
+    outline: none;
+} 
+
+.brand-name-tagline label {
+    font-size: 19px;
+    margin-right: 1rem;
+    margin-bottom: 0rem;
+}
+
+.brand-name-tagline > label {
+    width: 100%;
+}
+
+.brand-name-tagline label span{
+    color: #64605f;
+}
+
+.brand-name-tagline input {
+    margin-bottom: 3rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px dashed rgb(143, 143, 143);
+    font-size: 20px;
+    width: 80%;
+}
+
+.brand-name-tagline input:focus{
+    outline: none;
+    border-bottom: 2px dashed rgb(143, 143, 143);
+}
+
+.questions .container div {
+    display: flex;
+    font-weight: 900;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.questions .container label {
+    color: #f8931f;
+    font-family: Roboto;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 18px;
+}
+
+.questions .container textarea {
+    background-attachment: local;
+    background-image: repeating-linear-gradient(to right , transparent 0 5px, white 0 8px),
+    repeating-linear-gradient(to bottom, transparent 0 calc(1.5em - 2px), rgb(143, 143, 143) 0 1.5em);
+    line-height: 31px;
+    border: none;
+    font-size: 20px;
+    font-family: Roboto;
+    background-color: transparent;
+    resize: none;
+    width: 70%;
+}
+
+.questions .container textarea:focus {
+    outline: none;
+}
+
+.questions .container input:not([type=file]) {
+    margin-bottom: 2rem;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px dashed rgb(143, 143, 143);
+    font-size: 20px;
+    width: 100%;
+}
+
+.questions .container input:focus {
+    outline: none;
+    border-bottom: 2px dashed rgb(143, 143, 143);
+}
+
+.logo-type {
+    font-family: Roboto;
+    font-weight: 600;
+    color: #f8931f;
+}
+
+.fedexLogo {
+    width: 150px;
+}
+
+.fedex div .img {
+    padding-top: 3rem;
+}
+
+.pepsiLogo, .burgerLogo {
+    width: 100px;
+}
+
+.card {
+    background-color: transparent !important;
+}
+
+.card-body input {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    border-radius:50%;
+    outline:none;
+    z-index: 10;
+}
+
+.card-body input:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    border-radius: 50%;
+    background-color: #f8931f;
+}
+
+.card-body input:checked:after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.sub-btn {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: auto;
+}
+
+.sub-btn input:hover {
+    background-color: #5dc09b;
+}
+
+.context-bg {
+    width: 434px;
+}
+
+.o-textarea {
+    position: relative;
+}
+
+ol {
+    list-style: none;
+    counter-reset: cont;
+}
+ol li {
+    counter-increment: cont;
+    position: relative;
+}
+ol li::before {
+    content: counter(cont) ") ";
+    color: #f8931f;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: -30px;
+}
+
+.check-information {
+    display: flex;
+    flex-direction: row;
+}
+
+.form-check-inline {
+    display: inline-block !important;
+}
+
+.form-check-inline input {
+    position: relative;
+}
+
+input[type=checkbox] {
+    cursor: pointer !important;
+}
+
+input[type=checkbox]:before {
+    content: "" !important;
+    width: 10%  !important;
+    height: 10% !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    z-index: 9 !important;
+    background-color: #f8931f !important;
+}
+
+input[type=checkbox]:checked:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    background-color: #fff;
+}
+
+@media (max-width: 992px) {
+    .tag-line {
+        display: inline-block;
+    }
+    .brand-name-tagline {
+        top: -5px;
+    }
+    .brand-name-tagline input {
+        width: 100%;
+    }
+    .tag-line textarea {
+        width: 260px;
+    }
+    .brand-name-tagline {
+        max-width: 262px;
+    }
+    .brand-name-tagline label {
+        margin-bottom: 1rem;
+    }
+    .design-icon {
+        bottom: 115px;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero {
+        margin-bottom: 25rem;
+    }
+    .design-icon {
+        width: 250px !important;
+        bottom: 517px;
+        right: 130px;
+    }
+    .brand-name-tagline {
+        max-width: 100% !important;
+        left: 60px;
+    }
+}
+
+@media (max-width: 580px) {
+    .main-parent {
+        background: none;
+    }
+
+    .hero {
+        margin-bottom: 4rem;
+    }
+
+    .form > div:first-of-type {
+        margin-bottom: 2rem;
+    }
+
+    .brand-name-tagline input, .questions .container div input {
+        border-bottom: 2px solid rgb(143, 143, 143);
+    }
+    .brand-name-tagline input:focus, .questions .container div input:focus {
+        border-bottom: 2px solid rgb(143, 143, 143);
+    }
+
+    .design-icon-container img {
+        display: none;
+    }
+
+    .context-bg > img {
+        display: none;
+    }
+
+    .brand-name-tagline {
+        position: static !important;
+        width: 90%;
+        margin: auto;
+    }
+
+    .form .container > div:not(.sub-btn) {
+        display: block !important;
+    }
+
+    .form .container > div > div:first-child {
+        display: block !important;
+    }
+
+    .tag-line {
+        display: flex !important;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tag-line label {
+        font-size: 16px;
+    }
+
+    .tag-line textarea {
+        width: 100%;
+        font-size: 17px;
+        line-height: 4ch;
+        background-image: linear-gradient(transparent, transparent calc(4ch - 2px), rgb(143, 143, 143) 0px);
+        background-size: 100% 4ch;
+    }
+    .brand-name-tagline input, .questions .container div input {
+        font-size: 17px;
+    }
+
+    .brand-name-tagline label {
+        font-size: 15px;
+    }
+
+    /* questions */
+    .questions .container div {
+        margin: auto;
+        margin: 2rem auto 0;
+    }
+
+    .questions .container div label {
+        font-size: 15px;
+        text-align: start !important;
+    }
+
+    .questions .container textarea {
+        width: 100%;
+        font-size: 17px;
+        line-height: 4ch;
+        background-image: linear-gradient(transparent, transparent calc(4ch - 2px), rgb(143, 143, 143) 0px);
+        background-size: 100% 4ch;
+    }
+
+    .questions .container div {
+        display: flex !important;
+        flex-direction: column;
+    }
+
+    .questions .container div input {
+        width: 100%;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-container {
+        margin: 0 0 2rem 0 !important;
+    }
+
+    .sub-btn {
+        display: flex !important;
+        justify-content: center !important;
+    }
+
+    .context-bg {
+        width: auto;
+    }
+
+    .checkboxes-container {
+        width: 100% !important;
+    }
+}
+
+/* style the arabic page */
+
+.main-parent-AR form * {
+    font-family: Almarai;
+}
+.main-parent-AR .flip-img {
+    direction: rtl;
+    text-align: right;
+}
+.main-parent-AR .flip-img img {
+    transform: scaleX(-1);
+}
+.main-parent-AR .flip-img div:first-child img {
+    transform: scaleX(1);
+}
+.main-parent-AR label {
+    margin-right: 0;
+}
+.main-parent-AR .questions .container * {
+    
+    font-family: Almarai;
+}
+.main-parent-AR .brand-name-tagline{
+    left: -37px;
+    top: 20px;
+}
+
+.main-parent-AR .design-icon {
+    right: -60px;
+}
+.main-parent-AR ol {
+    list-style: none;
+    counter-reset: cont;
+}
+.main-parent-AR ol li {
+    counter-increment: cont;
+    position: relative;
+}
+.main-parent-AR ol li::before {
+    content: '';
+}
+.main-parent-AR ol li::after {
+    content: " (" counter(cont) !important;
+    color: #f8931f;
+    font-weight: bold;
+    font-size: 20px;
+    position: absolute;
+    left: auto !important;
+    margin-left: 0.5rem;
+}
+
+@media (max-width: 580px) {
+    .questions .container div label {
+        text-align: end !important;
+        width: 100%;
+    }
+}
+
+@media (max-width: 993px) {
+    .main-parent-AR .brand-name-tagline {
+        left: 101px;
+        top: -20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .main-parent-AR .design-icon {
+        right: -275px !important;
+    }
+    .main-parent-AR .brand-name-tagline {
+        left: -56px;
+    }
+    /* .brand-name-tagline {
+        max-width: 100% !important;
+        left: 130px;
+    } */
+}
